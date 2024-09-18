@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Knowledge Graph Extension",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Knowledge Graph"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["lib/vis-network.min.js", "lib/vis-network.min.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
